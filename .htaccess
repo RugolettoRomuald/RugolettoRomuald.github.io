@@ -1,0 +1,3 @@
+# video types
+AddType video/mp4 .mp4 .m4v
+RewriteRule ^(.*)\.mp4 - [E=no-gzip:1]
