@@ -20,10 +20,6 @@ h6 {
     font-family: 'Montserrat';
 }
 
-.stylizedPoint {
-    font-size: 0.5rem;
-}
-
 hr.code-title,
 hr.code-light,
 hr.code-dark {
@@ -123,6 +119,10 @@ section h2 {
     line-height: 3.1rem;
 }
 
+.stylizedPoint {
+    font-size: 0.5rem;
+}
+
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -132,6 +132,12 @@ section h2 {
 
 #mainNav .navbar-brand {
     color: #fff;
+}
+
+@media (max-width: 375px) {
+	#mainNav .navbar-brand {
+		font-size: 1rem;
+	}
 }
 
 #mainNav .navbar-nav {
@@ -372,7 +378,16 @@ a:active {
     border-width: 2px;
 }
 
+.bg-button {
+    background-color: #2B9083 !important;
+    background-image: url("../assets/images/bg_02.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .bg-primary {
+	background-color: #1a252f !important;
     background-image: url("../assets/images/bg_02.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -388,6 +403,7 @@ a:active {
 }
 
 .bg-quaternary {
+	background-color: #1a252f !important;
     background-image: url("../assets/images/bg_03.gif");
     background-repeat: no-repeat;
     background-size: cover;
