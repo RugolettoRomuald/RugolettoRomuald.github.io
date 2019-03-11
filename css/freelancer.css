@@ -123,6 +123,19 @@ section h2 {
     font-size: 0.5rem;
 }
 
+.no-grow{
+	flex-grow: 0;
+}
+
+#lang-selector {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.5rem;
+    line-height: 1rem;
+	padding-left: 0.5rem;
+	margin-left: auto;
+}
+
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;

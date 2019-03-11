@@ -22,25 +22,26 @@
         <!-- Custom styles for this template -->
         <link href="css/freelancer.css" rel="stylesheet">
     </head>
-    <body id="page-top">
+    <body id="page-top">	
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="font-weight-light">Romuald</span><span class="fas fa-adjust stylizedPoint"></span>Rugoletto</a>
+                <a class="btn btn-outline-light text-left rounded-circle" href="" id="lang-selector"></a>
                 <button class="navbar-toggler navbar-toggler-right text-uppercase bg-button text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
+					Menu
+					<i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse no-grow" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">À propos</a>
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about" textKey="about"></a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">Projets</a>
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects" textKey="projects"></a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact" textKey="contact"></a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +49,7 @@
         </nav>
         <!-- Header -->
         <header class="masthead bg-primary text-white text-center">
-            <div class="container">
+            <div class="container">	
                 <img class="img-fluid mb-5 d-block mx-auto" src="assets/images/profile.png" alt="">
                 <h1 class="text-uppercase mb-0">Romuald Rugoletto</h1>
                 <hr class="code-title">
@@ -58,19 +59,19 @@
         <!-- About Section -->
         <section class="bg-tertiary text-secondary mb-0" id="about">
             <div class="container">
-                <h2 class="text-center text-uppercase">À propos</h2>
+                <h2 class="text-center text-uppercase" textKey="about"></h2>
                 <hr class="code-dark mb-5">
                 <div class="row">
                     <div class="col-lg-4 ml-auto">
-                        <p class="lead text-justify">Après avoir obtenu une licence dans le Développement d’Applications Mobiles, durant laquelle j’ai pu créer des jeux sur Android et Windows Phone, je me suis spécialisé en poursuivant un master Management de Projet Innovant en jeux vidéo.</p>
+                        <p class="lead text-justify" textKey="about_p0"></p>
                     </div>
                     <div class="col-lg-4 mr-auto">
-                        <p class="lead text-justify">J’ai acquis dans cette formation de solides connaissances en gestion de projet tout en continuant d’améliorer mes compétences en programmation en tant que développeur dans chacun des projets auxquels j’ai participé.</p>
+                        <p class="lead text-justify" textKey="about_p1"></p>
                     </div>
                 </div>
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light portfolio-item text-secondary" href="#cv-romuald-rugoletto">Voir mon CV</a>
-                    <a class="btn btn-xl btn-outline-light text-secondary" download="CV_Romuald_Rugoletto.pdf" href="assets/documents/CV_Romuald_Rugoletto_HD.pdf"><i class="fas fa-download mr-2"></i></a>
+                    <a class="btn btn-xl btn-outline-light portfolio-item text-secondary" href="#cv-romuald-rugoletto" textKey="cv_label"></a>
+                    <a class="btn btn-xl btn-outline-light text-secondary" download="CV_Romuald_Rugoletto.pdf" id="cv_link" href="assets/documents/CV_Romuald_Rugoletto_HD.pdf"><i class="fas fa-download mr-2"></i></a>
                 </div>
             </div>
         </section>
@@ -78,7 +79,7 @@
         <section class="portfolio bg-quaternary" id="projects">
             <div class="container">
                 <!-- Professional Projects -->
-                <h2 class="text-center text-uppercase text-white mb-0">Projets professionnels</h2>
+                <h2 class="text-center text-uppercase text-white mb-0" textKey="professional_projects"></h2>
                 <hr class="code-title mb-5">
                 <div class="row justify-content-md-center">
                     <div class="col-md-4 col-lg-3">
@@ -103,7 +104,7 @@
                     </div>
                 </div>
                 <!-- Student Projects -->
-                <h2 class="text-center text-uppercase text-white mt-5 mb-0">Projets étudiants</h2>
+                <h2 class="text-center text-uppercase text-white mt-5 mb-0" textKey="student_projects"></h2>
                 <hr class="code-title mb-5">
                 <div class="row justify-content-md-center">
                     <div class="col-md-4 col-lg-3">
@@ -152,7 +153,7 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="container">
-                <h2 class="text-center text-uppercase text-secondary mb-0">Me contacter</h2>
+                <h2 class="text-center text-uppercase text-secondary mb-0" textKey="contact_me"></h2>
                 <hr class="code-dark mb-5">
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
@@ -180,21 +181,21 @@
                         <form name="sentMessage" id="contactForm" novalidate="novalidate" accept-charset="UTF-8">
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-1">
-                                    <label>Nom</label>
+                                    <label textKey="form_label_name"></label>
                                     <input class="form-control" id="name" type="text" placeholder="Nom" required="required" data-validation-required-message="Veuillez entrer votre nom.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-1">
-                                    <label>Adresse mail</label>
-                                    <input class="form-control" id="email" type="email" placeholder="Adresse mail" required="required" data-validation-email-message="Veuillez entrer une adresse mail valide." data-validation-required-message="Veuillez entrer votre adresse mail.">
+                                    <label textKey="form_label_email"></label>
+                                    <input class="form-control" id="email" type="email" placeholder="Adresse mail" required="required" data-validation-required-message="Veuillez entrer votre adresse mail." data-validation-email-message="Veuillez entrer une adresse mail valide.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-1">
-                                    <label>Message</label>
+                                    <label textKey="form_label_message"></label>
                                     <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Veuillez entrer un message."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
@@ -202,7 +203,7 @@
                             <br>
                             <div id="success"></div>
                             <div class="form-group text-center">
-                                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Envoyer</button>
+                                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton" textKey="form_send"></button>
                             </div>
                         </form>
                     </div>
@@ -216,7 +217,7 @@
             </div>
         </footer>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-        <div class="scroll-to-top d-lg-none position-fixed ">
+        <div class="scroll-to-top d-lg-none position-fixed">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
             <i class="fa fa-chevron-up"></i>
             </a>
@@ -240,16 +241,11 @@
                             <div class="embed-responsive embed-responsive-16by9  mb-0">
                                 <iframe alt='Trailer Darkness RollerCoaster: Ultimate Shooter Edition' class="embed-responsive-item" src="https://www.youtube.com/embed/aUsT5DKGo_E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <p class="mb-3">Rail shooter sur PSVR en réalité virtuelle développé avec Unity 3D (C#)</p>
-                            <p class="mb-3 text-justify">J'ai participé au développement de <i>Darkness RollerCoaster: Ultimate Shooter Edition</i> de mai à fin décembre 2018, d'abord dans le cadre d'un stage d'une durée de quatre mois donnant lieu à la validation de ma première année de master, puis en poursuivant la collaboration avec l'entreprise après le stage en tant que freelance, ce qui nous a permis d’achever le développement du jeu.</p>
+                            <p class="mb-3" textKey="darkness_p0"></p>
+                            <p class="mb-3 text-justify" textKey="darkness_p1"></p>
                             <p class="mb-0 text-left">Contribution :</p>
-                            <ul class="mb-3 text-left">
-                                <li>Unity 3D build sur PSVR (Playstation 4)</li>
-                                <li>Développement Core gameplay (tir / protection / inventaire / points / ...)</li>
-                                <li>Développement d'outils unity (gestionnaire de filtre caméra / contrôleur d'entrées multiplateforme / ...)</li>
-                                <li>Génération procédurale de niveaux</li>
-                            </ul>
-                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#">Retour</a>
+                            <ul class="mb-3 text-left" textKey="darkness_p2"></ul>
+                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#" textKey="return"></a>
                         </div>
                     </div>
                 </div>
@@ -273,7 +269,7 @@
                             <div class="embed-responsive embed-responsive-16by9  mb-0">
                                 <iframe alt='Trailer Excessive Speed' class="embed-responsive-item" src="https://www.youtube.com/embed/dSvrYa2XcKc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <p class="mb-0">Jeu de voiture sur smartphone en réalité augmentée (ARKit / ARCore) avec Unity 3D (C#)</p>
+                            <p class="mb-0" textKey="excessive_speed_p0"></p>
                         </div>
                     </div>
                     <div class="row justify-content-md-center">
@@ -290,14 +286,10 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <p class="mb-3 text-justify">J'ai participé au développement d'<i>Excessive Speed</i> en fin de sa production sur la période mai-juin 2018 durant un stage d'une durée de quatre mois donnant lieu à la validation de ma première année de master.</p>
+                            <p class="mb-3 text-justify" textKey="excessive_speed_p1"></p>
                             <p class="mb-0 text-left">Contribution :</p>
-                            <ul class="mb-3 text-left">
-                                <li>Développement d'un gestionnaire de bonus / malus</li>
-                                <li>Ajout d'une fonction de callibrage permettant de définir correctement la zone de jeu (taille / distance / orientation)</li>
-                                <li>Amélioration de la fonction "Réessayer" pour que l'ARKit et l'ARCore gardent les points d'ancrage entre les scènes</li>
-                            </ul>
-                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#">Retour</a>
+                            <ul class="mb-3 text-left" textKey="excessive_speed_p2"></ul>
+                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#" textKey="return"></a>
                         </div>
                     </div>
                 </div>
@@ -319,17 +311,13 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="embed-responsive embed-responsive-16by9  mb-0">
-                                <iframe alt='Gameplay RAM' class="embed-responsive-item" src="https://www.youtube.com/embed/AM3QEUNqNM8?cc_load_policy=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe alt='Gameplay RAM' class="embed-responsive-item yt-vid-to-translate" src="https://www.youtube.com/embed/AM3QEUNqNM8?cc_load_policy=1&cc_lang_pref=en" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <p class="mb-3">Jeu d'aventure sur smartphone avec Unity 3D (C#)</p>
-                            <p class="mb-3 text-justify">Le gameplay mélange différents genres de jeux (aventure, infiltration, course) et fait évoluer le joueur dans une galaxie mise en péril par un groupe occulte. Ce projet a été réalisé dans le cadre de ma deuxième année de master en collaboration avec 6 autres personnes, d'octobre 2018 jusqu'à notre présentation au <i>Festival Internationnal des Jeux</i> à Cannes en février 2019. Initialement prévu avec plus de phases de gameplay, nous avons dù revoir le GDD et remplacer plusieurs phases par des cinématiques (celles en 2D) par manque de ressources temps et humaines.</p>
+                            <p class="mb-3" textKey="ram_p0"></p>
+                            <p class="mb-3 text-justify" textKey="ram_p1"></p>
                             <p class="mb-0 text-left">Contribution :</p>
-                            <ul class="mb-3 text-left">
-                                <li>Développement de l'ensemble des fonctionnalités (seul développeur de l'équipe)</li>
-                                <li>Intégration (sons / level design / images / animations / ...)</li>
-                                <li>Aide à la 3D: la portée du projet a nécéssité que toute l'équipe produise des assets graphiques</li>
-                            </ul>
-                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#">Retour</a>
+                            <ul class="mb-3 text-left" textKey="ram_p2"></ul>
+                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#" textKey="return"></a>
                         </div>
                     </div>
                 </div>
@@ -347,17 +335,13 @@
                             <h2 class="text-secondary text-uppercase mb-0">Perfect Match</h2>
                             <hr class="code-dark mb-5">
                             <div class="embed-responsive embed-responsive-16by9  mb-0">
-                                <iframe alt='Gameplay RAM' class="embed-responsive-item" src="https://www.youtube.com/embed/LdVWBt5aPWM?cc_load_policy=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe alt='Gameplay PerfectMatch' class="embed-responsive-item yt-vid-to-translate" src="https://www.youtube.com/embed/LdVWBt5aPWM?cc_load_policy=1&cc_lang_pref=en" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <p class="mb-3">Beat them all développé pour Android avec le moteur Unity3d (C#)</p>
-                            <p class="mb-3 text-justify">Le joueur y contrôle un couple de personnages qui devront se battre ensemble contre les sbires du maître des enfers, avec un seul objectif : se protéger l'un l'autre. Ce projet a été réalisé dans le cadre de ma première année de master en collaboration avec 5 autres personnes, d'octobre 2017 jusqu'à notre présentation au <i>Festival Internationnal des Jeux</i> à Cannes en février 2018.</p>
+                            <p class="mb-3" textKey="perfect_match_p0"></p>
+                            <p class="mb-3 text-justify" textKey="perfect_match_p1"></p>
                             <p class="mb-0 text-left">Contribution :</p>
-                            <ul class="mb-3 text-left">
-                                <li>Développement des patterns du boss et de chaque ennemi (machine à états)</li>
-                                <li>Implémentation de A* (pathfinding) en se basant non pas sur le navmesh d'Unity mais sur les colliders</li>
-                                <li>Intégration des animations du joueur, des objets et du boss</li>
-                            </ul>
-                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#">Retour</a>
+                            <ul class="mb-3 text-left" textKey="perfect_match_p2"></ul>
+                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#" textKey="return"></a>
                         </div>
                     </div>
                 </div>
@@ -385,15 +369,11 @@
                             <img class="img-fluid border border-dark" src="assets/images/portfolio/screenshots/g7_03.jpg" alt="G7 screenshot">
                         </div>
                         <div class="col-lg-12">
-                            <p class="mb-3">Jeu de voiture sur Windows Phone en natif (C# / XAML)</p>
-                            <p class="mb-3 text-justify">Le joueur y contrôle un véhicule qui tente de fuir la police en roulant à contre sens. Le but étant de faire le plus de points en allant le plus loin possible en esquivant les véhicules qui arrivent en face. Le jeu comprend la possibilité d'entrer un pseudo, de choisir son véhicule ainsi qu'un classement permettant de se comparer aux autres joueurs. Ce projet a été réalisé dans le cadre de ma licence en développement d'applications mobiles et constituait ma première Game jam (moins de 24h de développement), mais sans aucune connaissance théorique dans le développement de jeu vidéo. C'est ce qui m'a donné l'envie de poursuivre mes études avec un master spécialisé dans le jeu vidéo.</p>
+                            <p class="mb-3" textKey="g7_p0"></p>
+                            <p class="mb-3 text-justify" textKey="g7_p1"></p>
                             <p class="mb-0 text-left"> Contribution :</p>
-                            <ul class="mb-3 text-left">
-                                <li>Développement de la partie moteur (physique / gestion des collisions / accélération / instanciation suivant l'Object pool pattern  / ...)</li>
-                                <li>Implémentation du gameplay (déplacements / équilibrage entre accélération et spawn de véhicules /...)</li>
-                                <li>Sauvegarde des préférences (profils / classement)</li>
-                            </ul>
-                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#">Retour</a>
+                            <ul class="mb-3 text-left" textKey="g7_p2"></ul>
+                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#" textKey="return"></a>
                         </div>
                     </div>
                 </div>
@@ -417,9 +397,9 @@
                             <img class="img-fluid border border-dark" src="assets/images/portfolio/screenshots/rgame.gif" alt="gif with RGame screenshots">
                         </div>
                         <div class="col-lg-12">
-                            <p class="mb-3">Jeu de rapidité et d’acuité visuelle développé pour Android en natif (Java)</p>
-                            <p class="text-justify">RGame est un fan-game des jeux Nintendo Mario et Pokemon, dans lequel le joueur va devoir trouver le symbole intrus le plus rapidement possible parmi de nombreuses cibles en mouvements. Le jeu comporte 4 niveaux de difficulté, plusieurs modes de jeu avec des thèmes customisables et un classement multijoueur. RGame est le premier jeu que j'ai développé, j'ai réalisé l'ensemble du jeu à l'exception des graphismes qui sont exclusivement des sprites de fan art nintendo.</p>
-                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#">Retour</a>
+                            <p class="mb-3" textKey="rgame_p0"></p>
+                            <p class="text-justify" textKey="rgame_p1"></p>
+                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#" textKey="return"></a>
                         </div>
                     </div>
                 </div>
@@ -434,8 +414,8 @@
                 <div class="container text-center">
                     <div class="row">
                         <div class="col mx-auto">
-                            <img alt="CV" src="assets/images/CV.jpg" class="img-fluid mb-5">
-                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#"><i class="fa fa-close"></i>Retour</a>
+                            <img id="cv_image" alt="CV" src="assets/images/CV.jpg" class="img-fluid mb-5">
+                            <a class="btn btn-primary btn-lg rounded portfolio-modal-dismiss" href="#" textKey="return"></a>
                         </div>
                     </div>
                 </div>
@@ -447,8 +427,10 @@
         <!-- Plugin JavaScript -->
         <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
         <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <!-- Contact Form JavaScript -->
+        <!-- Custom script -->
+		<script src="js/translate.js"></script>
         <script src="js/customEvents.js"></script>
+        <!-- Contact Form JavaScript -->
         <script src="js/jqBootstrapValidation.js"></script>
         <script src="js/contactMe.js"></script>
         <!-- Custom scripts for this template -->
