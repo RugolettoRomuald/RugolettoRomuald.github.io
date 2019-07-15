@@ -153,6 +153,12 @@ section h2 {
 	}
 }
 
+@media (max-width: 405px) {
+	#mainNav .text-btn-menu {
+		display: none;
+	}
+}
+
 #mainNav .navbar-nav {
     margin-top: 1rem;
     letter-spacing: 0.0625rem;
@@ -392,11 +398,8 @@ a:active {
 }
 
 .bg-button {
-    background-color: #2B9083 !important;
-    background-image: url("../assets/images/bg_02.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+	margin-left : 5px;
+    background-color: #1a252f !important;
 }
 
 .bg-primary {
