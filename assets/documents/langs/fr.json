@@ -13,7 +13,7 @@
 	"cv_href": "assets/documents/CV_Romuald_Rugoletto_HD_fr.pdf",
 	
 	"darkness_p0": "Rail shooter sur PSVR en réalité virtuelle développé avec Unity 3D (C#)",
-	"darkness_p1": "J'ai participé au développement de <i>Darkness RollerCoaster: Ultimate Shooter Edition</i> de mai à fin décembre 2018, d'abord dans le cadre d'un stage d'une durée de quatre mois donnant lieu à la validation de ma première année de master, puis en poursuivant la collaboration avec l'entreprise après le stage en tant que freelance, ce qui nous a permis d’achever le développement du jeu.",
+	"darkness_p1": "J'ai participé au développement de <i>Darkness RollerCoaster: Ultimate Shooter Edition</i> de mai 2018 à septembre 2019. D'abord dans le cadre d'un stage d'une durée de quatre mois donnant lieu à la validation de ma première année de master. Puis en poursuivant la collaboration avec l'entreprise après le stage en tant que freelance. Pour finir avec un nouveau stage de six mois validant ainsi ma dernière année d'étude et nous permettant d’achever le développement du jeu.",
 	"darkness_p2": "<li>Unity 3D build sur PSVR (Playstation 4)</li><li>Développement Core gameplay (tir / protection / inventaire / points / ...)</li><li>Développement d'outils unity (gestionnaire de filtre caméra / contrôleur d'entrées multiplateforme / ...)</li><li>Génération procédurale de niveaux</li>",
 	
 	"excessive_speed_p0": "Jeu de voiture sur smartphone en réalité augmentée (ARKit / ARCore) avec Unity 3D (C#)",
